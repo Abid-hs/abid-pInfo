@@ -1,0 +1,190 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('bg1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+  
+}
+
+
+/* styles.css */
+.box{
+    height: 510px;
+    width: 340px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 3px solid rgba(255, 255, 255, .2);
+    margin: auto;
+    border-radius: 10px;
+}
+.bg-img img{
+    display: flex;
+    position: absolute;
+    height: 150px;
+    width: 334px;
+    border-radius: 10px;
+}
+
+/* Image Box*/
+
+.image-box{
+    margin: 50px 25% 10px;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(0px);
+    border: 4px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+}
+.image-box img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 2px 1px rgba(0,0,0,0.3);
+}
+/* User Infomation */
+.user-info .name{
+    display: flex;
+    justify-content: center;
+    color: rgb(247, 87, 30);
+    font-weight: 800;
+    font-size: 20px;
+}
+.user-info .about{
+    display: flex;
+    justify-content: left;
+    margin-left: 4%;
+    font-weight: 700;
+    font-size: 17px;
+    color: #0be26c;
+}
+.user-info .aboutl{
+    display: flex;
+    justify-content: left;
+    margin-left: 4%;
+    margin-right: 2%;
+    font-weight: 550;
+    font-size: 16px;
+    color: #fcfcfc;
+}
+/* Social icons */
+.social-icons{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+}
+.social-icon-box{
+    position: relative;
+    display: flex;
+    font-size: 27px;
+    color: rebeccapurple;
+    align-items: center;
+    flex-direction: column;
+}
+.social-icon-box span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #01f0a8;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .4s;
+    z-index: 2;
+}
+
+.social-icon-box span:hover{
+    color: #fff;
+    box-shadow: inset 0 0 0 20px #8c78f0;
+    transform: translateY(-5px);
+}
+.social-icon-box .social-icon-name{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    padding: 5px 20px;
+    font-size: 13px;
+    background: #8c78f0;
+    color: #fff;
+    border-radius: 30px;
+    transition: all .3s cubic-bezier(0.07, -0.55, 0.265, 1.55);
+}
+.social-icon-box span:hover ~ .social-icon-name{
+    top: -45px;
+    opacity: 1;
+}
+/* Message Button*/
+.btn-box{
+    display: flex;
+    justify-content: center;
+}
+.btn-box .btn{
+    width: 120px;
+    height: 35px;
+    background: linear-gradient(to right,#9823db,#fb4aef);
+    color: #fff;
+    border: none;
+    font-weight: 800;
+    font-size: 90%;
+    border-radius: 80px;
+    cursor: pointer;
+}
+.btn-box .btn:hover{
+    background: linear-gradient(to right,#fb4aef,#9823db);
+}
+/* Animated circles */
+.circle-1{
+    position: absolute;
+    left: -20px;
+    top: 35%;
+    height: 50px;
+    width: 50px;
+    border: 2px dashed #c975fb;
+    border-radius: 50%;
+    animation: circle-1 5s ease-in-out infinite;
+}
+.circle-2{
+    position: absolute;
+    right: -20px;
+    bottom: -30px;
+    height: 100px;
+    width: 100px;
+    border: 2px dashed #c975fb;
+    border-radius: 50%;
+    animation: circle-2 15s ease-in-out infinite;
+}
+i.fa-facebook{color: #1877F2}
+i.fa-whatsapp{color: #0A66C2}
+i.fa-instagram{color: #d72888}
+i.fa-threads{color: #039BE5}
+i.fa-youtube{color: #FF0000}
+
+
+@keyframes circle-1 {
+    50%{
+        left: -20px;
+        top: 40%;
+    }
+}
+/* Circle-1 animation */
+@keyframes circle-2 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
